@@ -4,7 +4,7 @@ services:
     image: capcom6/sms-gateway
     build:
       context: ../..
-      dockerfile: build/package/Dockerfile
+      dockerfile: Dockerfile
       args:
         - APP=sms-gateway
     environment:
@@ -29,7 +29,7 @@ services:
     image: capcom6/sms-gateway
     build:
       context: ../..
-      dockerfile: build/package/Dockerfile
+      dockerfile: Dockerfile
       args:
         - APP=sms-gateway
     command: ["/app/app", "worker"]
